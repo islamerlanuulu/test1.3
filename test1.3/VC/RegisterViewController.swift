@@ -42,5 +42,17 @@ class RegisterViewController: UIViewController {
         }
        
     }
-    
+    @IBAction func eye(_ sender: UIButton ) {
+        if passTF.isSecureTextEntry {
+                    let image = UIImage(systemName: "eye.fill")
+                    sender.setImage(image, for: .normal)
+                    
+            passTF.isSecureTextEntry = false
+        } else {
+            let image = UIImage(systemName: "eye.slash.fill")
+            sender.setImage(image, for: .normal)
+            
+            passTF.isSecureTextEntry = true
+        }
+    }
 }

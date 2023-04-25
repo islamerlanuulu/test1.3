@@ -19,12 +19,23 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func loginTF(_ sender: Any) {
-        let login = loginTF.checkForEmptiness()
-        let login2 = passwordTF.checkForEmptiness()
+        loginTF.checkForEmptiness()
+        passwordTF.checkForEmptiness()
     }
     
     
-    @IBAction func eye(_ sender: Any) {
+    @IBAction func eye(_ sender: UIButton) {
+        if passwordTF.isSecureTextEntry {
+                    let image = UIImage(systemName: "eye.fill")
+                    sender.setImage(image, for: .normal)
+                    
+            passwordTF.isSecureTextEntry = false
+        } else {
+            let image = UIImage(systemName: "eye.slash.fill")
+            sender.setImage(image, for: .normal)
+            
+            passwordTF.isSecureTextEntry = true
+        }
     }
 }
 

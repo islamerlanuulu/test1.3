@@ -74,7 +74,7 @@
                                             <constraint firstAttribute="width" constant="315" id="gdc-Z2-igF"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1A-PW-xm9">
                                         <rect key="frame" x="184" y="315" width="161" height="24"/>
@@ -347,7 +347,7 @@
                                             <constraint firstAttribute="height" constant="48" id="db5-Ny-qXR"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXI-mN-yIM">
                                         <rect key="frame" x="40" y="446" width="295" height="48"/>
@@ -368,6 +368,16 @@
                                             <action selector="login2:" destination="ocP-VS-17M" eventType="touchUpInside" id="rIB-gw-7gk"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdI-Nc-dAl">
+                                        <rect key="frame" x="288" y="379" width="57.666666666666686" height="34.333333333333314"/>
+                                        <color key="tintColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="eye.slash" catalog="system"/>
+                                        <connections>
+                                            <action selector="eye:" destination="ocP-VS-17M" eventType="touchUpInside" id="SJO-gI-W59"/>
+                                            <action selector="eye:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VMM-ty-jnU"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -376,6 +386,7 @@
                                     <constraint firstItem="BWh-xa-AfZ" firstAttribute="top" secondItem="c6a-Q7-CE4" secondAttribute="bottom" constant="6" id="6K3-QP-vxH"/>
                                     <constraint firstItem="c6a-Q7-CE4" firstAttribute="leading" secondItem="zfs-6u-74r" secondAttribute="leading" constant="31" id="7Zd-oL-YIN"/>
                                     <constraint firstItem="N3K-Ey-UfW" firstAttribute="top" secondItem="dJi-Vr-ks0" secondAttribute="bottom" constant="18" id="APd-ct-cCC"/>
+                                    <constraint firstItem="xdI-Nc-dAl" firstAttribute="leading" secondItem="BWh-xa-AfZ" secondAttribute="trailing" constant="-58" id="CTX-Ed-O0Y"/>
                                     <constraint firstItem="LF3-Lc-hEN" firstAttribute="leading" secondItem="zfs-6u-74r" secondAttribute="leading" constant="30" id="CtE-da-Efv"/>
                                     <constraint firstItem="N3K-Ey-UfW" firstAttribute="top" secondItem="dJi-Vr-ks0" secondAttribute="bottom" constant="18" id="DDB-dP-9Mh"/>
                                     <constraint firstItem="Du4-a6-oSu" firstAttribute="top" secondItem="BAZ-vc-z2C" secondAttribute="bottom" constant="4" id="FDL-lT-Bly"/>
@@ -400,6 +411,7 @@
                                     <constraint firstItem="Vvz-C0-Hmy" firstAttribute="top" secondItem="zfs-6u-74r" secondAttribute="top" id="kAA-4Q-nGD"/>
                                     <constraint firstItem="BWh-xa-AfZ" firstAttribute="top" secondItem="c6a-Q7-CE4" secondAttribute="bottom" constant="6" id="khT-GJ-E2T"/>
                                     <constraint firstItem="PIn-iQ-Jxk" firstAttribute="top" secondItem="dJi-Vr-ks0" secondAttribute="bottom" constant="51" id="kn7-t6-gh1"/>
+                                    <constraint firstItem="xdI-Nc-dAl" firstAttribute="top" secondItem="BWh-xa-AfZ" secondAttribute="bottom" constant="-41" id="nFd-hp-6er"/>
                                     <constraint firstItem="bXI-mN-yIM" firstAttribute="leading" secondItem="zfs-6u-74r" secondAttribute="leading" constant="40" id="qG0-Tg-a1a"/>
                                     <constraint firstItem="BAZ-vc-z2C" firstAttribute="top" secondItem="PIn-iQ-Jxk" secondAttribute="bottom" constant="6" id="sU8-aJ-K74"/>
                                     <constraint firstItem="Du4-a6-oSu" firstAttribute="leading" secondItem="zfs-6u-74r" secondAttribute="leading" constant="30" id="tcO-Ia-LNf"/>
